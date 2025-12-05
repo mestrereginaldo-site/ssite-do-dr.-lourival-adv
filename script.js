@@ -2081,4 +2081,114 @@ dynamicStyles.textContent = `
     
     .data-grid {
         display: grid;
-       
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .data-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+    }
+    
+    .quantum-visualization {
+        background: rgba(157, 0, 255, 0.05);
+        border: 1px solid #9d00ff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    #quantumVizCanvas {
+        width: 100%;
+        height: 200px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+    
+    .compatibility-warning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000;
+    }
+    
+    .warning-content {
+        background: rgba(255, 100, 0, 0.9);
+        border: 3px solid #ff5500;
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 500px;
+        text-align: center;
+    }
+    
+    .warning-content button {
+        margin-top: 20px;
+        padding: 12px 30px;
+        background: #ff5500;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-family: 'Orbitron', monospace;
+        cursor: pointer;
+    }
+    
+    @keyframes connectionGrow {
+        from { height: 0; opacity: 1; }
+        to { height: 100px; opacity: 0; }
+    }
+    
+    @keyframes cursorFade {
+        from { opacity: 1; transform: scale(1); }
+        to { opacity: 0; transform: scale(3); }
+    }
+    
+    .immersion-basic {
+        --effect-intensity: 0.3;
+    }
+    
+    .immersion-advanced {
+        --effect-intensity: 0.7;
+    }
+    
+    .immersion-total {
+        --effect-intensity: 1;
+    }
+    
+    .advanced-animations .nexus-node {
+        animation: nodeFloat 3s ease-in-out infinite;
+    }
+    
+    @keyframes nodeFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .special-effects .neural-status {
+        background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(157, 0, 255, 0.1));
+    }
+`;
+
+document.head.appendChild(dynamicStyles);
+
+// ========== INICIALIZAÇÃO FINAL ==========
+
+// Aguardar DOM carregado
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeNeuralSystem);
+} else {
+    initializeNeuralSystem();
+}
+
+// Exportar sistema para uso global
+window.NeuralSystem = NeuralSystem;
