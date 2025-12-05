@@ -3,335 +3,742 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Lourival Oliveira - Advocacia Previdenciária de Excelência</title>
+    <title>Dr. Lourival Oliveira | Excelência Jurídica Integral</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
 </head>
 <body>
-    <!-- Navegação Flutuante -->
-    <nav class="floating-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Dr. Lourival Oliveira</span>
-                <span class="logo-subtext">Advocacia Previdenciária</span>
+    <!-- Sistema de Partículas Background -->
+    <div id="particles-js"></div>
+    <div class="universe-grid"></div>
+    
+    <!-- Menu de Navegação Holográfico -->
+    <nav class="holo-nav" id="holoNav">
+        <div class="nav-orbital">
+            <div class="nav-center">
+                <div class="nav-logo" data-text="DR. LOURIVAL OLIVEIRA">
+                    <span class="logo-glow">DR. LOURIVAL OLIVEIRA</span>
+                    <div class="logo-sub">EXCELÊNCIA JURÍDICA INTEGRAL</div>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Início</a></li>
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#areas" class="nav-link">Áreas de Atuação</a></li>
-                <li><a href="#success" class="nav-link">Casos de Sucesso</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
-            </ul>
-            <div class="nav-cta">
-                <a href="https://wa.me/5571999999999" target="_blank" class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Fale Conosco
+            <div class="nav-orbit">
+                <a href="#home" class="nav-planet active" data-planet="home">
+                    <span class="planet-icon"><i class="fas fa-home"></i></span>
+                    <span class="planet-label">INÍCIO</span>
+                </a>
+                <a href="#manifesto" class="nav-planet" data-planet="manifesto">
+                    <span class="planet-icon"><i class="fas fa-scroll"></i></span>
+                    <span class="planet-label">MANIFESTO</span>
+                </a>
+                <a href="#multiverso" class="nav-planet" data-planet="multiverso">
+                    <span class="planet-icon"><i class="fas fa-globe-americas"></i></span>
+                    <span class="planet-label">MULTIVERSO JURÍDICO</span>
+                </a>
+                <a href="#odisseia" class="nav-planet" data-planet="odisseia">
+                    <span class="planet-icon"><i class="fas fa-road"></i></span>
+                    <span class="planet-label">ODISSEIA</span>
+                </a>
+                <a href="#cosmos" class="nav-planet" data-planet="cosmos">
+                    <span class="planet-icon"><i class="fas fa-star"></i></span>
+                    <span class="planet-label">COSMOS DE CONQUISTAS</span>
+                </a>
+                <a href="#singularidade" class="nav-planet" data-planet="singularidade">
+                    <span class="planet-icon"><i class="fas fa-user-astronaut"></i></span>
+                    <span class="planet-label">SINGULARIDADE</span>
+                </a>
+                <a href="#constelacao" class="nav-planet" data-planet="constelacao">
+                    <span class="planet-icon"><i class="fas fa-satellite"></i></span>
+                    <span class="planet-label">CONSTELAÇÃO DE CONTATO</span>
                 </a>
             </div>
-            <button class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+        </div>
+        <div class="nav-quantum">
+            <div class="quantum-state">
+                <span class="state-indicator"></span>
+                <span class="state-text">CONEXÃO ATIVA</span>
+            </div>
+            <button class="quantum-toggle" id="quantumToggle">
+                <i class="fas fa-atom"></i>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section com Parallax -->
-    <section id="home" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="floating-elements">
-            <div class="float-element el1"><i class="fas fa-balance-scale"></i></div>
-            <div class="float-element el2"><i class="fas fa-gavel"></i></div>
-            <div class="float-element el3"><i class="fas fa-landmark"></i></div>
-            <div class="float-element el4"><i class="fas fa-file-contract"></i></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line">Excelência em</span>
-                    <span class="title-line highlight">Direito Previdenciário</span>
+    <!-- Portal de Entrada -->
+    <section id="home" class="portal-section">
+        <div class="portal-gate">
+            <div class="gate-ring outer"></div>
+            <div class="gate-ring middle"></div>
+            <div class="gate-ring inner"></div>
+            <div class="gate-core">
+                <h1 class="portal-title">
+                    <span class="title-line">EXCELÊNCIA JURÍDICA</span>
+                    <span class="title-line">NO MULTIVERSO DO DIREITO</span>
                 </h1>
-                <p class="hero-subtitle">Dr. Lourival Oliveira - Mais de 20 anos defendendo seus direitos em Salvador e todo o Brasil</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="cta-btn primary">Agendar Consulta</a>
-                    <a href="#areas" class="cta-btn secondary">Conhecer Áreas</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-frame">
-                    <div class="placeholder-img">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="image-badge">
-                        <span>OAB/BA 12345</span>
-                    </div>
+                <div class="portal-subtitle">
+                    <span class="subtitle-text">Dr. Lourival Oliveira - Transcendendo Fronteiras Legais</span>
+                    <div class="subtitle-pulse"></div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Explore</span>
-            <div class="mouse">
-                <div class="wheel"></div>
+        
+        <div class="portal-entries">
+            <div class="entry-point entry-left">
+                <div class="entry-halo"></div>
+                <div class="entry-content">
+                    <h3>JURISDIÇÃO INTEGRAL</h3>
+                    <p>Domínio completo sobre todas as esferas do Direito</p>
+                    <div class="entry-sparkle"></div>
+                </div>
+            </div>
+            
+            <div class="entry-point entry-right">
+                <div class="entry-halo"></div>
+                <div class="entry-content">
+                    <h3>ESTRATÉGIA CÓSMICA</h3>
+                    <p>Soluções além da convenção para resultados extraordinários</p>
+                    <div class="entry-sparkle"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portal-summon">
+            <button class="summon-btn" id="summonBtn">
+                <span class="summon-text">ATIVAR JORNADA</span>
+                <div class="summon-ripple"></div>
+                <div class="summon-orb">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Manifesto Jurídico -->
+    <section id="manifesto" class="manifesto-section">
+        <div class="manifesto-container">
+            <div class="manifesto-header">
+                <h2 class="section-title hologram">MANIFESTO DA EXCELÊNCIA</h2>
+                <div class="manifesto-subtitle">Uma Declaração de Princípios Jurídicos Cósmicos</div>
+            </div>
+            
+            <div class="manifesto-grid">
+                <div class="manifesto-card card-1">
+                    <div class="card-quantum">
+                        <div class="quantum-spin"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3><span class="number-glow">01</span> SOBERANIA DO CLIENTE</h3>
+                        <p>Cada caso é um universo único. Navegamos por suas complexidades com precisão astral, colocando sua soberania como centro gravitacional de nossa atuação.</p>
+                    </div>
+                    <div class="card-resonance"></div>
+                </div>
+                
+                <div class="manifesto-card card-2">
+                    <div class="card-quantum">
+                        <div class="quantum-spin"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3><span class="number-glow">02</span> MULTIDIMENSIONALIDADE JURÍDICA</h3>
+                        <p>Transcendemos especializações singulares. Dominamos o espectro completo do Direito, conectando dimensões legais para soluções integrais.</p>
+                    </div>
+                    <div class="card-resonance"></div>
+                </div>
+                
+                <div class="manifesto-card card-3">
+                    <div class="card-quantum">
+                        <div class="quantum-spin"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3><span class="number-glow">03</span> INOVAÇÃO ESTRATÉGICA</h3>
+                        <p>Criamos rotas jurídicas onde outros veem barreiras. Nossa abordagem combina tradição jurídica com tecnologias conceituais de ponta.</p>
+                    </div>
+                    <div class="card-resonance"></div>
+                </div>
+                
+                <div class="manifesto-card card-4">
+                    <div class="card-quantum">
+                        <div class="quantum-spin"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3><span class="number-glow">04</span> TRANSPARÊNCIA RADIAL</h3>
+                        <p>Comunicação clara como cristal. Cada passo, cada estratégia, cada possibilidade iluminada em tempo real, criando uma órbita de confiança absoluta.</p>
+                    </div>
+                    <div class="card-resonance"></div>
+                </div>
+            </div>
+            
+            <div class="manifesto-signature">
+                <div class="signature-glow">
+                    <div class="signature-name">Dr. Lourival Oliveira</div>
+                    <div class="signature-title">Guardião do Direito Integral</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre o Dr. Lourival -->
-    <section id="about" class="about-section">
-        <div class="section-header">
-            <h2 class="section-title">Dr. Lourival Oliveira</h2>
-            <p class="section-subtitle">Experiência, Dedicação e Resultados</p>
+    <!-- Multiverso Jurídico -->
+    <section id="multiverso" class="multiverse-section">
+        <div class="multiverse-header">
+            <h2 class="section-title cosmic">MULTIVERSO JURÍDICO</h2>
+            <p class="multiverse-subtitle">Navegando por Todas as Dimensões do Direito</p>
         </div>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Advogado Previdenciário com Trajetória de Sucesso</h3>
-                <p>Com mais de duas décadas de atuação especializada em Direito Previdenciário, o Dr. Lourival Oliveira construiu uma reputação sólida pela excelência técnica e comprometimento com os clientes.</p>
-                <p>Formado pela Universidade Federal da Bahia, com pós-graduação em Direito Previdenciário e diversas especializações, atua com maestria tanto na esfera administrativa quanto judicial, garantindo os direitos dos segurados em Salvador e em todo o território nacional.</p>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number" data-count="1000">0</span>
-                        <span class="stat-label">Processos</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="95">0</span>
-                        <span class="stat-label">% de Sucesso</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="20">0</span>
-                        <span class="stat-label">Anos de Experiência</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="50">0</span>
-                        <span class="stat-label">Milhões Recuperados</span>
+        
+        <div class="multiverse-core">
+            <div class="universe-center">
+                <div class="central-orb">
+                    <div class="orb-glow"></div>
+                    <div class="orb-content">
+                        <h3>NEXUS JURÍDICO</h3>
+                        <p>Ponto de convergência de todas as especialidades</p>
                     </div>
                 </div>
             </div>
-            <div class="about-quote">
-                <div class="quote-card">
-                    <i class="fas fa-quote-left"></i>
-                    <p class="quote-text">"Meu compromisso é transformar a complexidade do Direito Previdenciário em soluções claras e eficazes para meus clientes, sempre com ética e determinação."</p>
-                    <p class="quote-author">Dr. Lourival Oliveira</p>
+            
+            <div class="universe-orbits">
+                <!-- Previdenciário -->
+                <div class="orbit-path path-1">
+                    <div class="orbit-planet planet-prev">
+                        <div class="planet-halo"></div>
+                        <div class="planet-core">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="planet-info">
+                            <h4>PREVIDENCIÁRIO</h4>
+                            <p>Aposentadorias, revisões, benefícios</p>
+                            <div class="planet-stats">
+                                <span>+1000 casos</span>
+                                <span>98% sucesso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trabalhista -->
+                <div class="orbit-path path-2">
+                    <div class="orbit-planet planet-trab">
+                        <div class="planet-halo"></div>
+                        <div class="planet-core">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="planet-info">
+                            <h4>TRABALHISTA</h4>
+                            <p>Rescisões, assédio, horas extras</p>
+                            <div class="planet-stats">
+                                <span>Estratégia</span>
+                                <span>Resultados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Civil -->
+                <div class="orbit-path path-3">
+                    <div class="orbit-planet planet-civil">
+                        <div class="planet-halo"></div>
+                        <div class="planet-core">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div class="planet-info">
+                            <h4>CIVIL</h4>
+                            <p>Contratos, indenizações, propriedade</p>
+                            <div class="planet-stats">
+                                <span>Complexidade</span>
+                                <span>Precisão</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Criminal -->
+                <div class="orbit-path path-4">
+                    <div class="orbit-planet planet-crim">
+                        <div class="planet-halo"></div>
+                        <div class="planet-core">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <div class="planet-info">
+                            <h4>CRIMINAL</h4>
+                            <p>Defesa, habeas corpus, recursos</p>
+                            <div class="planet-stats">
+                                <span>Defesa</span>
+                                <span>Estratégia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Empresarial -->
+                <div class="orbit-path path-5">
+                    <div class="orbit-planet planet-emp">
+                        <div class="planet-halo"></div>
+                        <div class="planet-core">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="planet-info">
+                            <h4>EMPRESARIAL</h4>
+                            <p>Sociedades, fusões, compliance</p>
+                            <div class="planet-stats">
+                                <span>Inovação</span>
+                                <span>Segurança</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tributário -->
+                <div class="orbit-path path-6">
+                    <div class="orbit-planet planet-trib">
+                        <div class="planet-halo"></div>
+                        <div class="planet-core">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="planet-info">
+                            <h4>TRIBUTÁRIO</h4>
+                            <p>Planejamento, contencioso, recuperação</p>
+                            <div class="planet-stats">
+                                <span>Otimização</span>
+                                <span>Defesa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Família -->
+                <div class="orbit-path path-7">
+                    <div class="orbit-planet planet-fam">
+                        <div class="planet-halo"></div>
+                        <div class="planet-core">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="planet-info">
+                            <h4>FAMÍLIA</h4>
+                            <p>Divórcio, guarda, inventário</p>
+                            <div class="planet-stats">
+                                <span>Sensibilidade</span>
+                                <span>Justiça</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Digital -->
+                <div class="orbit-path path-8">
+                    <div class="orbit-planet planet-dig">
+                        <div class="planet-halo"></div>
+                        <div class="planet-core">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="planet-info">
+                            <h4>DIGITAL</h4>
+                            <p>LGPD, propriedade intelectual, cybercrimes</p>
+                            <div class="planet-stats">
+                                <span>Vanguarda</span>
+                                <span>Proteção</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="multiverse-controls">
+            <button class="universe-zoom" id="zoomIn">
+                <i class="fas fa-search-plus"></i>
+            </button>
+            <button class="universe-rotate" id="rotateOrbits">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="universe-zoom" id="zoomOut">
+                <i class="fas fa-search-minus"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Odisseia Profissional -->
+    <section id="odisseia" class="odyssey-section">
+        <div class="odyssey-container">
+            <div class="odyssey-header">
+                <h2 class="section-title stellar">ODISSEIA PROFISSIONAL</h2>
+                <p class="odyssey-subtitle">Uma Jornada Através do Tempo e das Conquistas</p>
+            </div>
+            
+            <div class="timeline-wormhole">
+                <div class="wormhole-axis"></div>
+                
+                <div class="timeline-event event-1" data-year="2003">
+                    <div class="event-portal"></div>
+                    <div class="event-content">
+                        <h3>INÍCIO DA TRAJETÓRIA</h3>
+                        <p>Formação em Direito pela Universidade Federal da Bahia, com honras acadêmicas e início da jornada no universo jurídico.</p>
+                        <div class="event-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event event-2" data-year="2008">
+                    <div class="event-portal"></div>
+                    <div class="event-content">
+                        <h3>ESPECIALIZAÇÃO CÓSMICA</h3>
+                        <p>Pós-graduação em Direito Previdenciário e primeira atuação de destaque recuperando R$ 2,5 milhões para clientes.</p>
+                        <div class="event-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event event-3" data-year="2013">
+                    <div class="event-portal"></div>
+                    <div class="event-content">
+                        <h3>EXPANSÃO MULTIDIMENSIONAL</h3>
+                        <p>Criação do escritório integral com atuação em todas as áreas do Direito. Primeiro caso internacional bem-sucedido.</p>
+                        <div class="event-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event event-4" data-year="2018">
+                    <div class="event-portal"></div>
+                    <div class="event-content">
+                        <h3>RECONHECIMENTO INTERGALÁCTICO</h3>
+                        <p>Prêmio Excelência Jurídica concedido pela OAB/BA. Palestrante em conferências nacionais sobre inovação no Direito.</p>
+                        <div class="event-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event event-5" data-year="2023">
+                    <div class="event-portal"></div>
+                    <div class="event-content">
+                        <h3>ERA DA SABEDORIA</h3>
+                        <p>20 anos de atuação. Mais de R$ 50 milhões recuperados para clientes. Mentor de novos talentos jurídicos.</p>
+                        <div class="event-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event event-future" data-year="AGORA">
+                    <div class="event-portal portal-future"></div>
+                    <div class="event-content">
+                        <h3>SEU CASO É O PRÓXIMO CAPÍTULO</h3>
+                        <p>Sua história jurídica começa aqui. Vamos escrever juntos o próximo capítulo de sucesso.</p>
+                        <button class="future-btn" id="futureBtn">INICIAR JORNADA</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Áreas de Atuação -->
-    <section id="areas" class="areas-section">
-        <div class="section-header">
-            <h2 class="section-title">Áreas de Atuação</h2>
-            <p class="section-subtitle">Especialista em Direito Previdenciário com Atuação Ampliada</p>
+    <!-- Cosmos de Conquistas -->
+    <section id="cosmos" class="cosmos-section">
+        <div class="cosmos-header">
+            <h2 class="section-title nebula">COSMOS DE CONQUISTAS</h2>
+            <p class="cosmos-subtitle">Galáxias de Resultados Transformadores</p>
         </div>
-        <div class="areas-container">
-            <div class="area-card main-area">
-                <div class="area-icon">
-                    <i class="fas fa-retirement"></i>
-                </div>
-                <h3 class="area-title">Direito Previdenciário</h3>
-                <ul class="area-list">
-                    <li>Aposentadorias (por tempo, idade, especial)</li>
-                    <li>Auxílio-doença e auxílio-acidente</li>
-                    <li>Pensão por morte</li>
-                    <li>Benefício assistencial (LOAS)</li>
-                    <li>Revisões de benefícios</li>
-                    <li>Recursos administrativos</li>
-                </ul>
-                <div class="area-highlight">
-                    <span>Área de Especialização</span>
+        
+        <div class="constellation-container">
+            <div class="constellation-line" id="constellation"></div>
+            
+            <div class="star-system system-1" data-value="50M">
+                <div class="star-core"></div>
+                <div class="star-glow"></div>
+                <div class="star-info">
+                    <h4>+R$ 50 MILHÕES</h4>
+                    <p>Recuperados para clientes em 20 anos de atuação</p>
                 </div>
             </div>
-            <div class="area-card">
-                <div class="area-icon">
-                    <i class="fas fa-briefcase-medical"></i>
+            
+            <div class="star-system system-2" data-value="1500">
+                <div class="star-core"></div>
+                <div class="star-glow"></div>
+                <div class="star-info">
+                    <h4>+1500 CASOS</h4>
+                    <p>Em todas as dimensões do Direito com excelência</p>
                 </div>
-                <h3 class="area-title">Direito do Trabalho</h3>
-                <p>Ações trabalhistas, rescisões, horas extras, equiparação salarial e demais questões laborais.</p>
             </div>
-            <div class="area-card">
-                <div class="area-icon">
-                    <i class="fas fa-home"></i>
+            
+            <div class="star-system system-3" data-value="95">
+                <div class="star-core"></div>
+                <div class="star-glow"></div>
+                <div class="star-info">
+                    <h4>95% DE SUCESSO</h4>
+                    <p>Taxa de vitória em processos complexos</p>
                 </div>
-                <h3 class="area-title">Direito Civil</h3>
-                <p>Contratos, indenizações, responsabilidade civil, direito de família e sucessões.</p>
             </div>
-            <div class="area-card">
-                <div class="area-icon">
-                    <i class="fas fa-building"></i>
+            
+            <div class="star-system system-4" data-value="8">
+                <div class="star-core"></div>
+                <div class="star-glow"></div>
+                <div class="star-info">
+                    <h4>8 ÁREAS DE DOMÍNIO</h4>
+                    <p>Especialização integral no espectro jurídico</p>
                 </div>
-                <h3 class="area-title">Direito Administrativo</h3>
-                <p>Concurso público, servidores, improbidade administrativa e licitações.</p>
+            </div>
+            
+            <div class="star-system system-5" data-value="100">
+                <div class="star-core"></div>
+                <div class="star-glow"></div>
+                <div class="star-info">
+                    <h4>100% DEDICAÇÃO</h4>
+                    <p>Compromisso total com cada universo jurídico</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="supernova-quote">
+            <div class="supernova-glow"></div>
+            <div class="quote-content">
+                <p class="quote-text">"No vácuo do conflito jurídico, criamos atmosferas de solução. Na escuridão da complexidade legal, somos faróis de clareza estratégica."</p>
+                <p class="quote-author">— Dr. Lourival Oliveira</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Singularidade -->
+    <section id="singularidade" class="singularity-section">
+        <div class="singularity-container">
+            <div class="singularity-core">
+                <div class="core-rotation">
+                    <div class="core-layers">
+                        <div class="layer layer-1"></div>
+                        <div class="layer layer-2"></div>
+                        <div class="layer layer-3"></div>
+                    </div>
+                    <div class="core-center">
+                        <div class="center-glow"></div>
+                        <div class="center-content">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lourival" alt="Dr. Lourival Oliveira" class="avatar-hologram">
+                            <h3>DR. LOURIVAL OLIVEIRA</h3>
+                            <p>Singularidade Jurídica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="singularity-data">
+                <div class="data-panel">
+                    <h4>MATRIZ DE HABILIDADES</h4>
+                    <div class="skill-matrix">
+                        <div class="skill" data-skill="Estratégia" data-level="98">
+                            <div class="skill-name">ESTRATÉGIA</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-skill="Negociação" data-level="96">
+                            <div class="skill-name">NEGOCIAÇÃO</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 96%"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-skill="Multidisciplinaridade" data-level="99">
+                            <div class="skill-name">MULTIDISCIPLINARIDADE</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 99%"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-skill="Inovação" data-level="95">
+                            <div class="skill-name">INOVAÇÃO</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-skill="Humanidade" data-level="100">
+                            <div class="skill-name">HUMANIDADE</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="data-quote">
+                    <p>"Não defendo casos, defendo universos. Cada cliente traz uma constelação única de desafios, e minha missão é navegar por esse cosmos jurídico até encontrar a solução perfeita."</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Casos de Sucesso -->
-    <section id="success" class="success-section">
-        <div class="section-header">
-            <h2 class="section-title">Casos de Sucesso</h2>
-            <p class="section-subtitle">Resultados que Transformam Vidas</p>
+    <!-- Constelação de Contato -->
+    <section id="constelacao" class="constellation-section">
+        <div class="constellation-header">
+            <h2 class="section-title aurora">CONSTELAÇÃO DE CONTATO</h2>
+            <p class="constellation-subtitle">Conecte-se ao Centro do Universo Jurídico</p>
         </div>
-        <div class="success-stories">
-            <div class="story-card">
-                <div class="story-header">
-                    <div class="story-icon">
-                        <i class="fas fa-user-tie"></i>
+        
+        <div class="communication-wormhole">
+            <div class="wormhole-form">
+                <div class="form-title">TRANSMISSÃO QUÂNTICA</div>
+                
+                <div class="form-group">
+                    <div class="input-hologram">
+                        <input type="text" id="userName" required>
+                        <label for="userName">SEU NOME</label>
+                        <div class="hologram-line"></div>
                     </div>
-                    <h3 class="story-title">Aposentadoria Especial</h3>
                 </div>
-                <p class="story-text">Conseguimos a aposentadoria especial para um trabalhador rural que havia sido indeferida três vezes, garantindo seu direito após 30 anos de contribuição.</p>
-                <div class="story-result">
-                    <span class="result-value">R$ 450.000,00</span>
-                    <span class="result-label">Valor recuperado</span>
-                </div>
-            </div>
-            <div class="story-card">
-                <div class="story-header">
-                    <div class="story-icon">
-                        <i class="fas fa-heartbeat"></i>
+                
+                <div class="form-group">
+                    <div class="input-hologram">
+                        <input type="email" id="userEmail" required>
+                        <label for="userEmail">COORDENADA DE CONTATO</label>
+                        <div class="hologram-line"></div>
                     </div>
-                    <h3 class="story-title">Pensão por Morte</h3>
                 </div>
-                <p class="story-text">Garantimos pensão por morte vitalícia para uma família que teve o benefício negado, assegurando sustento após o falecimento do provedor.</p>
-                <div class="story-result">
-                    <span class="result-value">100%</span>
-                    <span class="result-label">de sucesso</span>
-                </div>
-            </div>
-            <div class="story-card">
-                <div class="story-header">
-                    <div class="story-icon">
-                        <i class="fas fa-wheelchair"></i>
+                
+                <div class="form-group">
+                    <div class="input-hologram">
+                        <input type="tel" id="userPhone" required>
+                        <label for="userPhone">CANAL DE COMUNICAÇÃO</label>
+                        <div class="hologram-line"></div>
                     </div>
-                    <h3 class="story-title">LOAS/ BPC</h3>
                 </div>
-                <p class="story-text">Conseguimos o benefício de prestação continuada para pessoa com deficiência após recurso no INSS, garantindo dignidade e qualidade de vida.</p>
-                <div class="story-result">
-                    <span class="result-value">15 anos</span>
-                    <span class="result-label">de benefício</span>
+                
+                <div class="form-group">
+                    <div class="input-hologram">
+                        <select id="universeSelect" required>
+                            <option value="" disabled selected>ESCOLHA SEU UNIVERSO JURÍDICO</option>
+                            <option value="previdenciario">PREVIDENCIÁRIO</option>
+                            <option value="trabalhista">TRABALHISTA</option>
+                            <option value="civil">CIVIL</option>
+                            <option value="criminal">CRIMINAL</option>
+                            <option value="empresarial">EMPRESARIAL</option>
+                            <option value="tributario">TRIBUTÁRIO</option>
+                            <option value="familia">FAMÍLIA</option>
+                            <option value="digital">DIGITAL</option>
+                            <option value="outro">OUTRO UNIVERSO</option>
+                        </select>
+                        <div class="hologram-line"></div>
+                    </div>
                 </div>
+                
+                <div class="form-group">
+                    <div class="input-hologram">
+                        <textarea id="userMessage" rows="4" required></textarea>
+                        <label for="userMessage">MENSAGEM ESTELAR</label>
+                        <div class="hologram-line"></div>
+                    </div>
+                </div>
+                
+                <button class="transmission-btn" id="transmissionBtn">
+                    <span class="btn-text">INICIAR TRANSMISSÃO</span>
+                    <div class="btn-pulse"></div>
+                    <div class="btn-orb">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </button>
             </div>
-        </div>
-        <div class="success-cta">
-            <p>Seu caso pode ser o próximo sucesso! Entre em contato para uma avaliação gratuita.</p>
-            <a href="#contact" class="cta-btn primary">Falar com o Dr. Lourival</a>
-        </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contact" class="contact-section">
-        <div class="section-header">
-            <h2 class="section-title">Entre em Contato</h2>
-            <p class="section-subtitle">Agende uma consulta e tire suas dúvidas</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-card">
-                    <div class="info-icon">
+            
+            <div class="wormhole-contact">
+                <div class="contact-star">
+                    <div class="star-point">
                         <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>Escritório em Salvador</h3>
-                        <p>Av. Tancredo Neves, 1234, Sala 1501<br>Centro Empresarial Iguatemi<br>Salvador - BA</p>
+                        <h4>NEXUS TERRESTRE</h4>
+                        <p>Av. Tancredo Neves, 1234<br>Salvador - BA</p>
                     </div>
                 </div>
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>Telefones</h3>
+                
+                <div class="contact-star">
+                    <div class="star-point">
+                        <i class="fas fa-satellite-dish"></i>
+                        <h4>TRANSMISSÃO IMEDIATA</h4>
                         <p>(71) 3333-4444<br>(71) 99999-9999 (WhatsApp)</p>
                     </div>
                 </div>
-                <div class="info-card">
-                    <div class="info-icon">
+                
+                <div class="contact-star">
+                    <div class="star-point">
                         <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>E-mail</h3>
+                        <h4>SINAL HOLOGRÁFICO</h4>
                         <p>contato@drlourivaloliveira.com.br</p>
                     </div>
                 </div>
-                <div class="info-card">
-                    <div class="info-icon">
+                
+                <div class="contact-star">
+                    <div class="star-point">
                         <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>Horário de Atendimento</h3>
-                        <p>Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 12h (com agendamento)</p>
+                        <h4>JANELA TEMPORAL</h4>
+                        <p>Seg-Sex: 8h-19h<br>Sáb: 9h-13h</p>
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required placeholder="Seu nome completo">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" required placeholder="Seu telefone com WhatsApp">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail">
-                    </div>
-                    <div class="form-group">
-                        <select id="subject" name="subject" required>
-                            <option value="" disabled selected>Assunto do contato</option>
-                            <option value="aposentadoria">Aposentadoria</option>
-                            <option value="pensao">Pensão por Morte</option>
-                            <option value="auxilio">Auxílio Doença/Acidente</option>
-                            <option value="loas">LOAS/BPC</option>
-                            <option value="outro">Outro assunto</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Descreva brevemente sua situação"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                </form>
+        </div>
+        
+        <div class="quantum-entanglement">
+            <div class="entanglement-text">
+                <p>CONEXÃO QUÂNTICA ESTABELECIDA • PRONTO PARA RECEBER SUA TRANSMISSÃO • RESPOSTA EM ATÉ 24H</p>
             </div>
+            <div class="entanglement-pulse"></div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h3>Dr. Lourival Oliveira</h3>
-                <p>Advocacia Previdenciária com Excelência e Humanidade</p>
+    <!-- Portal de Retorno -->
+    <footer class="portal-footer">
+        <div class="footer-wormhole">
+            <div class="wormhole-return">
+                <button class="return-btn" id="returnBtn">
+                    <i class="fas fa-chevron-up"></i>
+                    <span>RETORNAR AO NEXUS</span>
+                </button>
             </div>
-            <div class="footer-links">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#areas">Áreas de Atuação</a></li>
-                    <li><a href="#success">Casos de Sucesso</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
+            
+            <div class="footer-signature">
+                <div class="signature-nexus">
+                    <h3>DR. LOURIVAL OLIVEIRA</h3>
+                    <p>EXCELÊNCIA JURÍDICA NO MULTIVERSO DO DIREITO</p>
+                </div>
+                
+                <div class="signature-oab">
+                    <p>OAB/BA 12345 • CRC 67890</p>
+                    <p>© 2023 NEXUS JURÍDICO • TODAS AS DIMENSÕES PROTEGIDAS</p>
+                </div>
             </div>
-            <div class="footer-social">
-                <h4>Conecte-se</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/5571999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            
+            <div class="footer-transmission">
+                <div class="transmission-channel">
+                    <a href="#" class="channel-link">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WHATSAPP QUÂNTICO</span>
+                    </a>
+                    <a href="#" class="channel-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LINKEDIN ESTELAR</span>
+                    </a>
+                    <a href="#" class="channel-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>INSTAGRAM HOLOGRÁFICO</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Dr. Lourival Oliveira - Todos os direitos reservados. OAB/BA 12345</p>
-            <p>Site desenvolvido com excelência para advogados de destaque</p>
-        </div>
     </footer>
 
-    <!-- WhatsApp Flutuante -->
-    <a href="https://wa.me/5571999999999" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-        <span>Fale conosco</span>
-    </a>
+    <!-- Sistema de Transmissão -->
+    <div class="transmission-modal" id="transmissionModal">
+        <div class="modal-wormhole">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>TRANSMISSÃO INICIADA</h3>
+                    <button class="modal-close" id="modalClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="transmission-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">ESTABELECENDO CONEXÃO QUÂNTICA...</div>
+                    </div>
+                    <div class="transmission-message">
+                        <p>SUA MENSAGEM FOI ENVIADA AO NEXUS CENTRAL. O DR. LOURIVAL RESPONDERÁ SUA TRANSMISSÃO EM ATÉ 24 HORAS.</p>
+                        <p>ENQUANTO ISSO, EXPLORE O MULTIVERSO JURÍDICO.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
+    <script src="particles.js"></script>
+    <script src="effects.js"></script>
 </body>
 </html>
