@@ -1,596 +1,396 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="nexus-universe">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DR. LOURIVAL OLIVEIRA :: SISTEMA JURÍDICO NEURAL :: EXCELÊNCIA MULTIDIMENSIONAL</title>
-    
-    <!-- Meta Revolucionário -->
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Sistema Jurídico Neural do Dr. Lourival Oliveira. Experiência imersiva de advocacia integral. Transcendendo dimensões legais.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
-    
-    <!-- Fontes Extremas -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Major+Mono+Display&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Ícones Quânticos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lourival Oliveira - Advocacia de Excelência em Salvador</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- CSS Personalizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon Neural -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2300ffff%22>🧠</text></svg>">
-    
-    <!-- PWA -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    <!-- WebGL Detector -->
-    <script>
-        window.WebGLConfig = {
-            forceEnabled: true,
-            shaderQuality: 'ultra'
-        };
-    </script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
-<body class="quantum-loading">
-    <!-- Tela de Carregamento Neural -->
-    <div class="neural-loader" id="neuralLoader">
-        <div class="neural-network">
-            <div class="neuron-layer layer-1"></div>
-            <div class="neuron-layer layer-2"></div>
-            <div class="neuron-layer layer-3"></div>
-            <div class="neuron-pulse"></div>
-        </div>
-        <div class="loader-text">
-            <span class="loading-char" data-char="I">I</span>
-            <span class="loading-char" data-char="N">N</span>
-            <span class="loading-char" data-char="I">I</span>
-            <span class="loading-char" data-char="C">C</span>
-            <span class="loading-char" data-char="I">I</span>
-            <span class="loading-char" data-char="A">A</span>
-            <span class="loading-char" data-char="N">N</span>
-            <span class="loading-char" data-char="D">D</span>
-            <span class="loading-char" data-char="O">O</span>
-            <span class="loading-char" data-char="S">S</span>
-            <span class="loading-char" data-char="I">I</span>
-            <span class="loading-char" data-char="S">S</span>
-            <span class="loading-char" data-char="T">T</span>
-            <span class="loading-char" data-char="E">E</span>
-            <span class="loading-char" data-char="M">M</span>
-            <span class="loading-char" data-char="A">A</span>
-            <span class="loading-char" data-char="N">N</span>
-            <span class="loading-char" data-char="E">E</span>
-            <span class="loading-char" data-char="U">U</span>
-            <span class="loading-char" data-char="R">R</span>
-            <span class="loading-char" data-char="A">A</span>
-            <span class="loading-char" data-char="L">L</span>
-        </div>
-        <div class="loader-subtext">
-            <span>CONECTANDO AOS 8 DIMENSÕES JURÍDICAS</span>
-            <div class="connection-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Canvas WebGL para Efeitos -->
-    <canvas id="quantumCanvas"></canvas>
-    <canvas id="neuralCanvas"></canvas>
-    <canvas id="particleCanvas"></canvas>
-    
-    <!-- Interface Neural Principal -->
-    <div class="neural-interface">
-        <!-- Barra de Estado Neural -->
-        <div class="neural-status">
-            <div class="status-left">
-                <div class="neural-badge">
-                    <div class="neural-glow"></div>
-                    <span class="neural-title">SISTEMA NEURAL JURÍDICO</span>
-                    <span class="neural-version">v2.3.8</span>
-                </div>
-                <div class="system-time" id="systemTime">
-                    <span class="time-digital">00:00:00</span>
-                    <span class="time-quantum">| SALVADOR-BA |</span>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚖️</span>
+                <div class="logo-text">
+                    <h1>Dr. Lourival</h1>
+                    <p>Oliveira Advogados</p>
                 </div>
             </div>
-            <div class="status-right">
-                <div class="neural-connection">
-                    <div class="connection-indicator active"></div>
-                    <span>CONEXÃO QUÂNTICA ATIVA</span>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#areas" class="nav-link">Áreas de Atuação</a>
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">
+                    <span class="typing-text">Justiça</span>
+                    <span class="typing-cursor">|</span>
+                </h2>
+                <h1 class="hero-name">Dr. Lourival Oliveira</h1>
+                <p class="hero-subtitle">Advogado especializado em Direito Previdenciário com mais de 15 anos de experiência em Salvador e região</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn-primary">Agendar Consulta</a>
+                    <a href="#areas" class="btn-secondary">Conhecer Áreas</a>
                 </div>
-                <div class="system-controls">
-                    <button class="neural-btn audio-toggle" id="audioToggle">
-                        <i class="fas fa-wave-square"></i>
-                        <span>SONORIDADE</span>
-                    </button>
-                    <button class="neural-btn immersion-toggle" id="immersionToggle">
-                        <i class="fas fa-vr-cardboard"></i>
-                        <span>IMERSÃO TOTAL</span>
-                    </button>
-                    <button class="neural-btn matrix-toggle" id="matrixToggle">
-                        <i class="fas fa-code"></i>
-                        <span>VISUALIZAR CÓDIGO</span>
-                    </button>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-frame">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                        <p>Imagem do Dr. Lourival Oliveira</p>
+                    </div>
+                </div>
+                <div class="floating-badges">
+                    <div class="badge">
+                        <i class="fas fa-award"></i>
+                        <span>Prêmio Excelência Jurídica 2022</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-star"></i>
+                        <span>+200 Casos Resolvidos</span>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Núcleo Neural Central -->
-        <div class="neural-core">
-            <!-- Núcleo Esquerdo: Dados do Dr. Lourival -->
-            <div class="core-left">
-                <div class="hologram-profile">
-                    <div class="hologram-container">
-                        <div class="hologram-scan"></div>
-                        <div class="hologram-image">
-                            <div class="image-matrix">
-                                <!-- Avatar gerado por IA -->
-                                <div class="matrix-pixel" style="--x:1;--y:1"></div>
-                                <div class="matrix-pixel" style="--x:2;--y:1"></div>
-                                <!-- ... mais pixels -->
-                            </div>
-                        </div>
-                        <div class="hologram-data">
-                            <h1 class="data-name">
-                                <span class="name-glow">DR. LOURIVAL</span>
-                                <span class="name-neon">OLIVEIRA</span>
-                            </h1>
-                            <div class="data-title">
-                                <span class="title-main">SISTEMA JURÍDICO INTEGRAL</span>
-                                <span class="title-sub">EXPERTISE MULTIDIMENSIONAL</span>
-                            </div>
-                        </div>
-                    </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre o Dr. Lourival</h2>
+                <p class="section-subtitle">Experiência, dedicação e resultados em advocacia</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Com mais de 15 anos de atuação no Direito Previdenciário e outras áreas do Direito, o <strong>Dr. Lourival Oliveira</strong> é referência em Salvador quando se trata de defender os direitos dos cidadãos.</p>
                     
-                    <div class="bio-matrix">
-                        <div class="matrix-row">
-                            <div class="matrix-cell">
-                                <span class="cell-label">EXPERIÊNCIA</span>
-                                <span class="cell-value">20+ ANOS</span>
-                            </div>
-                            <div class="matrix-cell">
-                                <span class="cell-label">CASOS</span>
-                                <span class="cell-value">1500+</span>
-                            </div>
+                    <p>Formado pela Universidade Federal da Bahia, com pós-graduação em Direito Previdenciário e diversas especializações, atua com ética, transparência e comprometimento com cada cliente.</p>
+                    
+                    <p>Seu escritório oferece atendimento personalizado, sempre buscando a melhor solução jurídica para cada caso, com foco em resultados eficientes e satisfatórios.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Anos de Experiência</p>
                         </div>
-                        <div class="matrix-row">
-                            <div class="matrix-cell">
-                                <span class="cell-label">SUCESSO</span>
-                                <span class="cell-value">95.7%</span>
-                            </div>
-                            <div class="matrix-cell">
-                                <span class="cell-label">VALOR</span>
-                                <span class="cell-value">R$ 50M+</span>
-                            </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Clientes Atendidos</p>
+                        </div>
+                        <div class="stat">
+                            <h3>95%</h3>
+                            <p>Taxa de Sucesso</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Sistema de Áreas Jurídicas -->
-                <div class="jurisdiction-grid">
-                    <div class="grid-title">
-                        <h2>MATRIX JURISDICIONAL</h2>
-                        <p>DOMÍNIO COMPLETO SOBRE 8 DIMENSÕES LEGAIS</p>
-                    </div>
-                    
-                    <div class="jurisdiction-cube">
-                        <div class="cube-face face-front">
-                            <div class="face-content">
-                                <div class="jurisdiction-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <h3>PREVIDENCIÁRIO</h3>
-                                <p class="jurisdiction-stats">98% SUCESSO</p>
-                                <div class="jurisdiction-progress">
-                                    <div class="progress-fill" style="width: 98%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="cube-face face-back">
-                            <div class="face-content">
-                                <div class="jurisdiction-icon">
-                                    <i class="fas fa-balance-scale"></i>
-                                </div>
-                                <h3>TRABALHISTA</h3>
-                                <p class="jurisdiction-stats">96% SUCESSO</p>
-                                <div class="jurisdiction-progress">
-                                    <div class="progress-fill" style="width: 96%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="cube-face face-right">
-                            <div class="face-content">
-                                <div class="jurisdiction-icon">
-                                    <i class="fas fa-gavel"></i>
-                                </div>
-                                <h3>CIVIL</h3>
-                                <p class="jurisdiction-stats">94% SUCESSO</p>
-                                <div class="jurisdiction-progress">
-                                    <div class="progress-fill" style="width: 94%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="cube-face face-left">
-                            <div class="face-content">
-                                <div class="jurisdiction-icon">
-                                    <i class="fas fa-user-shield"></i>
-                                </div>
-                                <h3>CRIMINAL</h3>
-                                <p class="jurisdiction-stats">97% SUCESSO</p>
-                                <div class="jurisdiction-progress">
-                                    <div class="progress-fill" style="width: 97%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="cube-face face-top">
-                            <div class="face-content">
-                                <div class="jurisdiction-icon">
-                                    <i class="fas fa-building"></i>
-                                </div>
-                                <h3>EMPRESARIAL</h3>
-                                <p class="jurisdiction-stats">95% SUCESSO</p>
-                                <div class="jurisdiction-progress">
-                                    <div class="progress-fill" style="width: 95%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="cube-face face-bottom">
-                            <div class="face-content">
-                                <div class="jurisdiction-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <h3>TRIBUTÁRIO</h3>
-                                <p class="jurisdiction-stats">93% SUCESSO</p>
-                                <div class="jurisdiction-progress">
-                                    <div class="progress-fill" style="width: 93%"></div>
-                                </div>
-                            </div>
+                <div class="about-image">
+                    <div class="image-card">
+                        <div class="card-content">
+                            <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
+                            <ul>
+                                <li>Bacharel em Direito - UFBA</li>
+                                <li>Pós-graduação em Direito Previdenciário</li>
+                                <li>Especialização em Direito do Trabalho</li>
+                                <li>Mestrado em Direito Social</li>
+                            </ul>
                         </div>
                     </div>
-                    
-                    <div class="jurisdiction-controls">
-                        <button class="cube-control" id="rotateLeft">
-                            <i class="fas fa-rotate-left"></i>
-                        </button>
-                        <button class="cube-control" id="rotateAuto">
-                            <i class="fas fa-sync-alt"></i>
-                        </button>
-                        <button class="cube-control" id="rotateRight">
-                            <i class="fas fa-rotate-right"></i>
-                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Áreas de Atuação -->
+    <section class="areas" id="areas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Áreas de Atuação</h2>
+                <p class="section-subtitle">Especialidades jurídicas com foco em resultados</p>
+            </div>
+            
+            <div class="areas-grid">
+                <div class="area-card highlighted">
+                    <div class="area-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Direito Previdenciário</h3>
+                    <p>Aposentadorias, pensões por morte, auxílio-doença, benefícios assistenciais (LOAS), revisões de benefícios e planejamento previdenciário.</p>
+                    <div class="area-tags">
+                        <span class="tag">Aposentadoria</span>
+                        <span class="tag">Pensão</span>
+                        <span class="tag">LOAS</span>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Direito do Trabalho</h3>
+                    <p>Reclamações trabalhistas, rescisões indiretas, horas extras, assédio moral, acidentes de trabalho e negociações coletivas.</p>
+                    <div class="area-tags">
+                        <span class="tag">Rescisão</span>
+                        <span class="tag">Assédio</span>
+                        <span class="tag">Horas Extras</span>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Direito Civil</h3>
+                    <p>Contratos, responsabilidade civil, indenizações, direito de família, sucessões, direitos do consumidor e propriedade.</p>
+                    <div class="area-tags">
+                        <span class="tag">Contratos</span>
+                        <span class="tag">Família</span>
+                        <span class="tag">Indenizações</span>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Direito Criminal</h3>
+                    <p>Defesa em processos criminais, habeas corpus, tráfico de drogas, crimes contra a pessoa e patrimônio, liberdade provisória.</p>
+                    <div class="area-tags">
+                        <span class="tag">Defesa</span>
+                        <span class="tag">Habeas Corpus</span>
+                        <span class="tag">Liberdade</span>
                     </div>
                 </div>
             </div>
             
-            <!-- Núcleo Central: Sistema de Navegação -->
-            <div class="core-center">
-                <div class="neural-nexus">
-                    <div class="nexus-ring ring-1"></div>
-                    <div class="nexus-ring ring-2"></div>
-                    <div class="nexus-ring ring-3"></div>
-                    
-                    <div class="nexus-core">
-                        <div class="core-hologram">
-                            <div class="hologram-text">
-                                <span class="text-line">JURISDIÇÃO</span>
-                                <span class="text-line">MULTIDIMENSIONAL</span>
-                                <span class="text-line">ATIVA</span>
-                            </div>
-                            <div class="core-pulse"></div>
+            <div class="areas-note">
+                <p><i class="fas fa-info-circle"></i> Atuamos também em outras áreas do Direito. Entre em contato para saber mais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Diferenciais -->
+    <section class="features" id="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Diferenciais do Escritório</h2>
+                <p class="section-subtitle">O que nos torna únicos no atendimento jurídico</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                    </div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Cada cliente recebe atenção exclusiva, com acompanhamento próximo em todas as etapas do processo.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <h3>Agilidade Processual</h3>
+                    <p>Utilizamos tecnologia de ponta para agilizar processos e manter os clientes sempre informados.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <h3>Transparência Total</h3>
+                    <p>Informações claras sobre honorários, prazos e possibilidades de sucesso desde a primeira consulta.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <h3>Atuação em Salvador</h3>
+                    <p>Conhecimento profundo da realidade jurídica de Salvador e toda a Bahia, com escritório estratégico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Agende uma consulta ou tire suas dúvidas</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Escritório em Salvador</h3>
+                            <p>Av. Sete de Setembro, 123, Centro</p>
+                            <p>Salvador - BA, 40000-000</p>
                         </div>
                     </div>
                     
-                    <!-- Pontos de Navegação Neural -->
-                    <div class="nexus-node node-1" data-section="manifesto">
-                        <div class="node-glow"></div>
-                        <div class="node-content">
-                            <span class="node-id">01</span>
-                            <span class="node-title">MANIFESTO</span>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Telefone & WhatsApp</h3>
+                            <p>(71) 99999-9999</p>
+                            <p>(71) 3333-3333</p>
                         </div>
                     </div>
                     
-                    <div class="nexus-node node-2" data-section="odyssey">
-                        <div class="node-glow"></div>
-                        <div class="node-content">
-                            <span class="node-id">02</span>
-                            <span class="node-title">ODISSEIA</span>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>E-mail</h3>
+                            <p>contato@drlourivaloliveira.com.br</p>
+                            <p>lourival.oliveira@adv.oab.br</p>
                         </div>
                     </div>
                     
-                    <div class="nexus-node node-3" data-section="conquest">
-                        <div class="node-glow"></div>
-                        <div class="node-content">
-                            <span class="node-id">03</span>
-                            <span class="node-title">CONQUISTAS</span>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
                         </div>
-                    </div>
-                    
-                    <div class="nexus-node node-4" data-section="cases">
-                        <div class="node-glow"></div>
-                        <div class="node-content">
-                            <span class="node-id">04</span>
-                            <span class="node-title">CASOS</span>
-                        </div>
-                    </div>
-                    
-                    <div class="nexus-node node-5" data-section="contact">
-                        <div class="node-glow"></div>
-                        <div class="node-content">
-                            <span class="node-id">05</span>
-                            <span class="node-title">CONTATO</span>
-                        </div>
-                    </div>
-                    
-                    <div class="nexus-node node-6" data-section="quantum">
-                        <div class="node-glow"></div>
-                        <div class="node-content">
-                            <span class="node-id">06</span>
-                            <span class="node-title">QUÂNTICO</span>
+                        <div class="info-text">
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                            <p>Sábado: 9h às 12h (com agendamento)</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Sistema de Ativação -->
-                <div class="activation-system">
-                    <button class="activation-btn" id="activationBtn">
-                        <div class="btn-inner">
-                            <span class="btn-text">ATIVAR SISTEMA</span>
-                            <div class="btn-energy">
-                                <div class="energy-pulse"></div>
-                            </div>
+                <div class="contact-form">
+                    <h3>Envie sua Mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Seu nome completo" required>
                         </div>
-                    </button>
-                    <div class="activation-status">
-                        <span>SISTEMA EM ESTANDBY</span>
-                        <div class="status-indicator"></div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Seu telefone com WhatsApp" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="" disabled selected>Assunto de interesse</option>
+                                <option value="previdenciario">Direito Previdenciário</option>
+                                <option value="trabalhista">Direito do Trabalho</option>
+                                <option value="civil">Direito Civil</option>
+                                <option value="criminal">Direito Criminal</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Descreva brevemente sua situação" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-icon">⚖️</span>
+                        <div class="logo-text">
+                            <h2>Dr. Lourival Oliveira</h2>
+                            <p>Advocacia de Excelência</p>
+                        </div>
                     </div>
+                    <p>Defendendo seus direitos com ética, experiência e resultados em Salvador e toda a Bahia.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#areas">Áreas de Atuação</a>
+                    <a href="#diferenciais">Diferenciais</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Conecte-se</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p class="oab">OAB/BA 123.456</p>
                 </div>
             </div>
             
-            <!-- Núcleo Direito: Sistema de Contato -->
-            <div class="core-right">
-                <!-- Console de Contato Neural -->
-                <div class="neural-console">
-                    <div class="console-header">
-                        <h3><i class="fas fa-satellite-dish"></i> CONSOLE DE CONTATO QUÂNTICO</h3>
-                        <div class="console-status">
-                            <span class="status-online">ONLINE</span>
-                            <div class="status-pulse"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="console-body">
-                        <div class="message-log" id="messageLog">
-                            <div class="message system">
-                                <span class="timestamp">[00:00:01]</span>
-                                <span class="content">SISTEMA NEURAL INICIALIZADO</span>
-                            </div>
-                            <div class="message system">
-                                <span class="timestamp">[00:00:02]</span>
-                                <span class="content">AGUARDANDO CONEXÃO DO USUÁRIO</span>
-                            </div>
-                        </div>
-                        
-                        <div class="input-system">
-                            <div class="input-field">
-                                <input type="text" id="neuralInput" placeholder="DIGITE SUA CONSULTA JURÍDICA..." autocomplete="off">
-                                <div class="input-underline"></div>
-                            </div>
-                            <button class="send-btn" id="sendMessage">
-                                <i class="fas fa-paper-plane"></i>
-                                <span>TRANSMITIR</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Painel de Contato Direto -->
-                <div class="contact-panel">
-                    <div class="panel-grid">
-                        <div class="contact-cell cell-urgent">
-                            <div class="cell-icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <div class="cell-content">
-                                <h4>URGÊNCIA JURÍDICA</h4>
-                                <p>(71) 99999-9999</p>
-                                <span class="cell-tag">RESPOSTA IMEDIATA</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-cell cell-whatsapp">
-                            <div class="cell-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="cell-content">
-                                <h4>WHATSAPP NEURAL</h4>
-                                <p>CONVERSA DIRETA</p>
-                                <span class="cell-tag">CONEXÃO 24H</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-cell cell-email">
-                            <div class="cell-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="cell-content">
-                                <h4>E-MAIL QUÂNTICO</h4>
-                                <p>contato@drlourival.com</p>
-                                <span class="cell-tag">RESPOSTA 6H</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-cell cell-location">
-                            <div class="cell-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="cell-content">
-                                <h4>NEXUS SALVADOR</h4>
-                                <p>AV. TANCREDO NEVES</p>
-                                <span class="cell-tag">CENTRO EMPRESARIAL</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button class="emergency-btn" id="emergencyBtn">
-                        <div class="emergency-flash"></div>
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <span>CASO DE EMERGÊNCIA</span>
-                    </button>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Dr. Lourival Oliveira - Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> para advocacia de excelência</p>
             </div>
         </div>
-        
-        <!-- Barra de Dados Inferior -->
-        <div class="data-stream">
-            <div class="stream-container">
-                <div class="stream-text" id="dataStream">
-                    // SISTEMA JURÍDICO NEURAL ATIVO // DR. LOURIVAL OLIVEIRA // 20 ANOS DE EXCELÊNCIA // 
-                    8 DIMENSÕES JURÍDICAS DOMINADAS // 1500+ CASOS RESOLVIDOS // 95.7% TAXA DE SUCESSO // 
-                    R$ 50 MILHÕES RECUPERADOS // ADVOCACIA INTEGRAL // ESTRATÉGIA MULTIDIMENSIONAL // 
-                    SALVADOR - BAHIA - BRASIL // CONEXÃO QUÂNTICA ESTABELECIDA // PRONTO PARA ATENDER //
-                </div>
-            </div>
-            <div class="stream-controls">
-                <div class="stream-speed">
-                    <span>VELOCIDADE:</span>
-                    <input type="range" min="1" max="10" value="5" id="streamSpeed">
-                </div>
-                <button class="stream-pause" id="streamPause">
-                    <i class="fas fa-pause"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Modais de Sistema -->
-    <div class="modal-system" id="manifestoModal">
-        <div class="modal-neural">
-            <div class="modal-header">
-                <h2><i class="fas fa-scroll"></i> MANIFESTO DA EXCELÊNCIA NEURAL</h2>
-                <button class="modal-close" data-modal="manifesto">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="manifesto-grid">
-                    <div class="manifesto-card" data-principle="1">
-                        <div class="card-header">
-                            <span class="principle-number">01</span>
-                            <h3>SOBERANIA DO CLIENTE</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Cada caso é uma matriz única de complexidades. Navegamos por essas redes com precisão cirúrgica, posicionando sua soberania como núcleo gravitacional de todo o sistema operacional jurídico.</p>
-                            <div class="card-stats">
-                                <span>ATENÇÃO: 100%</span>
-                                <span>FOCO: ABSOLUTO</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="manifesto-card" data-principle="2">
-                        <div class="card-header">
-                            <span class="principle-number">02</span>
-                            <h3>MULTIDIMENSIONALIDADE JURÍDICA</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Transcendemos especializações lineares. Dominamos o espectro completo das 8 dimensões jurídicas, criando conexões neurais entre disciplinas aparentemente desconexas para soluções integrais impossíveis de conceber por mentes convencionais.</p>
-                            <div class="card-stats">
-                                <span>DIMENSÕES: 8</span>
-                                <span>INTERCONEXÕES: ∞</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="manifesto-card" data-principle="3">
-                        <div class="card-header">
-                            <span class="principle-number">03</span>
-                            <h3>INOVAÇÃO ESTRATÉGICA QUÂNTICA</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Criamos rotas jurídicas em espaços ainda não mapeados. Nossa abordagem funde tradição milenar com tecnologias conceituais de ponta, operando em superposição entre o estabelecido e o revolucionário.</p>
-                            <div class="card-stats">
-                                <span>INOVAÇÃO: 24/7</span>
-                                <span>EVOLUÇÃO: CONSTANTE</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="manifesto-card" data-principle="4">
-                        <div class="card-header">
-                            <span class="principle-number">04</span>
-                            <h3>TRANSPARÊNCIA RADIAL NEURAL</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Comunicação clara como diamante sintético. Cada processo, cada estratégia, cada possibilidade é iluminada em tempo real através de múltiplos canais neurais, criando uma rede de confiança impenetrável.</p>
-                            <div class="card-stats">
-                                <span>CLAREZA: 100%</span>
-                                <span>ACESSO: TOTAL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="manifesto-signature">
-                    <div class="signature-hologram">
-                        <div class="hologram-line"></div>
-                        <span class="signature-name">DR. LOURIVAL OLIVEIRA</span>
-                        <span class="signature-title">ARQUITETO DO SISTEMA NEURAL JURÍDICO</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Sistema de Áudio Espacial -->
-    <div class="audio-system">
-        <audio id="ambientAudio" loop>
-            <source src="https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="neuralAudio">
-            <source src="https://assets.mixkit.co/sfx/preview/mixkit-sci-fi-interface-903.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="quantumAudio">
-            <source src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-    
-    <!-- Scripts Revolucionários -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    </footer>
+
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5571999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Lourival" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
-    <script src="audio.js"></script>
-    <script src="shaders.js"></script>
-    
-    <!-- Inicialização Neural -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Inicializar sistema neural
-            setTimeout(() => {
-                document.body.classList.remove('quantum-loading');
-                document.getElementById('neuralLoader').style.opacity = '0';
-                setTimeout(() => {
-                    document.getElementById('neuralLoader').style.display = 'none';
-                    // Ativar sistema principal
-                    initializeNeuralSystem();
-                }, 1000);
-            }, 3000);
-        });
-    </script>
 </body>
 </html>
